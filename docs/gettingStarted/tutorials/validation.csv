@@ -1,44 +1,42 @@
 Level,Group,Feature,HelloWorld (TurtleBot4 LiDAR occlusion),Ship motion prediction (NTNU),Robot arm screw assistant (DTI),Multi robot human detection (PAL)
-**Architecture**,**Knowledge manager**,r/w data,|ok|,|ok|,|ok|,
-,,r/w event,|ok|,|ok|,|ok|,
-,,r/w historical data,|nok|,|ok|,|ok|,
-,,persistency,|ok|,|ok|,|ok|,
-,,r/w LSTM model,|nok|,|ok|,,
-,**Communication manager**,MQTT support,|ok|,|ok|,,
-,,Redis support,|ok|,|ok|,|ok|,
-,,RabbitMQ support,|nok|,|nok|,,
-,,ROS support,|nok|,|nok|,,|nok|
-,,WebSocket support,|nok|,|ok|,,
-,**Trustworthiness**,ET monitoring,|nok|,|nok|,,
-,,STL support,|ok|,|ok|,,
-,,Protocol-level runtime verification,|nok|,|ok|,|ok|,
-,,Trustworthiness dashboard panel,|nok|,|ok|,|ok|,
-,**Integration manager**,Legacy synchronous interface bridge,|nok|,|nok|,|ok|,
-,,External middleware boundary adapter,|nok|,|nok|,,|ok|
-,**Adaptation manager**,Fleet-level adaptation arbitration,|nok|,|nok|,,|ok|
-**rpio**,**Transformations**,roboArch2aadl,|ok|,|ok|,,
-,,aadl2aadl_il,|ok|,|ok|,,
-,,aadl_il2codeskeletons,|ok|,|ok|,|ok|,
-,,aadl_il2messages,|ok|,|ok|,|ok|,
-,,aadl_il2actions,|ok|,|ok|,,
-,,aadl_il2workflows,|ok|,|ok|,,
-,**PyLauncher**,launch python swc,|ok|,|ok|,,
-,**Command Line Interface (CLI)**,run transformations,|ok|,|ok|,,
-,,build,|ok|,|ok|,,
-,,deploy,|ok|,|nok|,,
-,,run,|ok|,|ok|,,
-,,create rpio package,|ok|,|nok|,|nok|,
-,,Check rpio package,|nok|,|nok|,,
-,**Remote agent**,remote commands,|ok|,|nok|,,
-,,remote status,|nok|,|nok|,,
-,,Over the Air Update (OTA),|nok|,|nok|,,
-**Deployment**,**Runtime**,Native python,|nok|,|nok|,,
-,,Virtual environment python,|ok|,|ok|,,
-,,Docker container,|ok|,|ok|,|nok|,
+**Architecture**,**Knowledge manager**,r/w data,|ok|,|ok|,|ok|,|ok|
+,,r/w event,|ok|,|ok|,|ok|,|ok|
+,,r/w historical data,|nok|,|ok|,|ok|,|nok|
+,,r/w LSTM model,|nok|,|ok|,|nok|,|nok|
+,**Communication manager**,MQTT support,|ok|,|ok|,|nok|,|nok|
+,,Redis support,|ok|,|ok|,|ok|,|ok|
+,,RabbitMQ support,|nok|,|nok|,|nok|,|nok|
+,,ROS support,|nok|,|nok|,|nok|,|ok|
+,,WebSocket support,|nok|,|ok|,|nok|,|nok|
+,**Trustworthiness**,STL support,|ok|,|ok|,|ok|,|ok|
+,,Protocol-level runtime verification,|nok|,|ok|,|ok|,|ok|
+,,Trustworthiness dashboard panel,|nok|,|ok|,|ok|,|ok|
+,**Integration manager**,Legacy synchronous interface bridge,|ok|,|ok|,|ok|,|ok|
+,,External middleware boundary adapter,|nok|,|nok|,|ok|,|ok|
+,**Adaptation manager**,Fleet-level adaptation arbitration,|nok|,|nok|,|nok|,|ok|
+**rpio**,**Transformations**,roboArch2aadl,|ok|,|nok|,|ok|,|nok|
+,,aadl2aadl_il,|ok|,|nok|,|ok|,|nok|
+,,aadl_il2codeskeletons,|ok|,|nok|,|ok|,|nok|
+,,aadl_il2messages,|ok|,|nok|,|ok|,|nok|
+,,aadl_il2actions,|ok|,|nok|,|ok|,|nok|
+,,aadl_il2workflows,|ok|,|nok|,|ok|,|nok|
+,**PyLauncher**,launch python swc,|ok|,|nok|,|ok|,|nok|
+,**Command Line Interface (CLI)**,run transformations,|ok|,|nok|,|nok|,|nok|
+,,build,|ok|,|nok|,|nok|,|nok|
+,,deploy,|ok|,|nok|,|nok|,|nok|
+,,run,|ok|,|nok|,|nok|,|nok|
+,,create rpio package,|ok|,|nok|,|ok|,|nok|
+,,Check rpio package,|ok|,|nok|,|ok|,|nok|
+,**Remote agent**,remote commands,|ok|,|nok|,|nok|,|nok|
+,,remote status,|ok|,|nok|,|nok|,|nok|
+,,Over the Air Update (OTA),|nok|,|nok|,|nok|,|nok|
+**Deployment**,**Runtime**,Native python,|nok|,|nok|,|nok|,|nok|
+,,Virtual environment python,|ok|,|nok|,|ok|,|ok|
+,,Docker container,|ok|,|nok|,|nok|,|ok|
 ,,Graduated multi-tier deployment,|ok|,|ok|,|ok|,|ok|
-**Client Library**,rpclpy,r/w data,|ok|,|ok|,|ok|,
-,,r/w event,|ok|,|ok|,|ok|,
-,,r/w historical data,|ok|,|ok|,|ok|,
-,,signal status,|ok|,|ok|,,
-,,Health check,|nok|,|nok|,,
+**Client Library**,rpclpy,r/w data,|ok|,|ok|,|ok|,|ok|
+,,r/w event,|ok|,|ok|,|ok|,|ok|
+,,r/w historical data,|nok|,|ok|,|ok|,|nok|
+,,signal status,|ok|,|ok|,|ok|,|ok|
+,,Health check,|ok|,|ok|,|ok|,|ok|
 **Used rpio version**,,,**v1.0.0**,**v1.0.4**,**v1.0.4**,**v1.0.4**
